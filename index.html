@@ -1,298 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
 
+
+<html lang="id">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-
-  <!-- bootstrap icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
-
-  <!-- my css -->
-  <link rel="stylesheet" href="style.css" />
-
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mukhlis MJ</title>
+    <link href="./src/output.css" rel="stylesheet">
 </head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+  <body>
 
-<body id="home">
+      <!-- header start -->
+      <header id="navbar" 
+        class="bg-transparent absolute top-0 left-0 w-full flexitems-center z-50 transition duration-300">
+          <div class="container max-w-4xl mx-auto ">
+              <div class="flex items-center justify-between relative">
+                  <div class="px-4 ">
+                      <a href="#home" class="font-bold text-lg text-slate-500 block py-6">mukhlismjalil</a>
+                  </div>
+                  <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 z-50 group md:hidden">
+                      <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out group-[.hamburger-active]:rotate-45 group-[.hamburger-active]:origin-top-left"></span>
+                      <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out group-[.hamburger-active]:scale-0"></span>
+                      <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out group-[.hamburger-active]:-rotate-45 group-[.hamburger-active]:origin-bottom-left"></span>
+                    </button>
+                    
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/1x/LOGO.png" alt="" width="30" class="d-inline-block" />
-        Mukhlis MJ
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.mukhlismj.com/">My Blog</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- akhir Navbar -->
+                    <!-- menu -->
+                    <nav id="nav-menu" class="hidden absolute top-full right-4 w-[200px] bg-white shadow-lg rounded-lg md:block md:static md:w-auto md:bg-transparent md:shadow-none">
+                      <ul class="flex flex-col md:flex-row md:space-x-6">
+                        <li><a href="#home" class="block px-4 py-2 text-slate-700 hover:text-rose-500">Beranda</a></li>
+                        <li><a href="#about" class="block px-4 py-2 text-slate-700 hover:text-rose-500">Tentang</a></li>
+                        <li><a href="#services" class="block px-4 py-2 text-slate-700 hover:text-rose-500">Layanan</a></li>
+                        <li><a href="#contact" class="block px-4 py-2 text-slate-700 hover:text-rose-500">Kontak</a></li>
+                      </ul>
+                    </nav>
 
-  <!-- jumbotron -->
-  <section class="jumbotron text-center">
-    <img src="img/mukhlismj.jpg" alt="mukhlis mj" width="200" class="rounded-circle img-thumbnail" />
-    <h1 class="display-4 fw-bold pt-3 fs-1">MUKHLIS MJ
-    </h1>
-    <div class="deskripsi pt-3 ">
-      <p class="lead fs-4">Graphic, Photo Editing & web Dev</p>
-    </div>
-   
-    <!-- akhir jumbotron -->
+                </div>
+                
 
-    <!-- sosmed -->
-    <section id="sosmed">
-      <div class="container">
-        <div class="row fs-2">
-          <div class="col">
-            <a href="https://www.instagram.com/mukhlismjalil/" target="_blank"><i
-                class="bi bi-instagram "></i></a>
-            <a href="https://web.facebook.com/mukhlis.face" target="_blank"><i
-                class="bi bi-facebook"></i></a>
-            <a href="https://www.twitter.com/mukhlismjalil/" target="_blank"><i class="bi bi-twitter "></i></a>
-            
+              </div>
+          </div>
+      </header>
+      <!-- header end -->
+      
+      <!-- Hero Section Start -->
+      <section id="home" class="pt-36">
+          <div class="container max-w-4xl mx-auto px-8">
+              <div class="flex flex-wrap items-center">
+                  <!-- Kolom Kiri -->
+                  <div class="w-full lg:w-1/2 self-center">
+                      <h1 class="text-balance font-semibold text-rose-500 md:text-xl">
+                          Halo semua 🤚, Saya 
+                          <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">
+                              Mukhlis MJ
+                          </span>
+                      </h1>
+                      <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
+                          Desainer grafis & <span class="text-black">Editor foto</span>
+                      </h2>
+                      <p class="font-medium text-slate-500 mb-10 leading-relaxed">
+                        Siap bikin fotomu makin keren? Langsung <span class="text-black">klik tombol</span>  di bawah ya!👇 
+                          
+                      </p>
+
+                      <a href="https://wa.me/6282260624622?text=Halo%20Mukhlis!%20Saya%20tertarik%20dengan%20jasa%20editing%20foto%20Anda.
+                      " target="_blank" class="text-base font-semibold text-white bg-rose-600 py-3 px-8 rounded-full hover:shadow-lg hover:bg-rose-500 transition duration-300 ease-in-out">
+                          Hubungi Saya
+                      </a>
+                  </div>
+
+                  <!-- Kolom Kanan -->
+                  <div class="w-full lg:w-1/2 self-end">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0 flex justify-center">
+                      <!-- SVG Background -->
+                      <span class="absolute inset-0 flex justify-center items-center -z-10 translate-x-20 translate-y-4">
+                        <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#FF0066" d="M9.4,-1.6C9.4,11.1,4.7,22.1,-8.6,22.1C-21.8,22.1,-43.7,11.1,-43.7,-1.6C-43.7,-14.3,-21.8,-28.5,-8.6,-28.5C4.7,-28.5,9.4,-14.3,9.4,-1.6Z" transform="translate(100 100) scale(2.2)" />
+                        </svg>
+                      </span>
+                  
+                      <!-- Foto -->
+                      <img src="img/mukhlis-mj.png" alt="mukhlis mj" class="max-w-sm lg:max-w-lg relative z-10">
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- About section start -->
+      <section>
+          <div id="about" class="pt-36 pb-32">
+              <div class="container max-w-4xl mx-auto px-8">
+                  <div class="flex flex-wrap">
+                      <div class="w-full px-4 mb-10 lg:w-1/2">
+                          
+                          <h4 class="font-bold uppercase  text-rose-500 text-lg mb-3">Tentang Saya</h4>
+                          
+                          <h2 class="font-bold text-black text-3xl mb-3 max-w-md lg:text-4xl">Yuk, eksplorasi kreativitas tanpa batas!</h2>
+                          
+                          <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">Saya adalah seorang graphic designer & photo editor yang suka mengeksplorasi desain, mulai dari photo manipulation, logo design, hingga vintage-style branding.</p>
+
+                          <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg pt-3"> Saat ini, saya juga tertarik belajar web programming untuk memperluas kreativitas di dunia digital.</p>
+                      </div>
+
+                      <div class="w-full px-4 lg:w-1/2">
+                          <h3 class="font-semibold text-black text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+                          <p class="font-medium text-base  text-slate-500 mb-6 lg:text-lg">Saya sering berbagi tips & trik cepat seputar <span class="text-black">Adobe Photoshop</span> dan <span class="text-black">Adobe Illustrator</span> di media sosial. Mulai dari teknik editing yang simpel hingga efek keren yang bikin desain makin standout! ✨</p>
+
+                            <p class="font-medium text-base  text-slate-500 mb-6 lg:text-lg">
+                              Kalau kamu suka dunia desain atau pengen belajar editing dengan cara yang mudah dipahami, yuk mampir! 🚀</p>
+
+                          <div class="flex items-center">
+
+                              <!-- tiktok -->
+                              <a 
+                                  href="https://tiktok.com/@mukhlismjalil" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-rose-500 hover:bg-rose-500 hover:text-white">
+                                  
+                                  <svg width="20" class="fill-current"
+                                  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                              </a>
+
+                              <!-- instagram -->
+                              <a 
+                                  href="https://instagram.com/mukhlismjalil" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-rose-500 hover:bg-rose-500 hover:text-white">
+                                  
+                                  <svg width="20" class="fill-current"
+                                  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                              </a>
+
+                              <!-- youtube -->
+                              <a 
+                                  href="https://www.youtube.com/@mukhlismjalil" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-rose-500 hover:bg-rose-500 hover:text-white">
+                                  
+                                  <svg width="20" class="fill-current" 
+                                  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                              </a>
+
+                              <!-- x -->
+                              <a 
+                                  href="https://x.com/mukhlismjalil" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-400 hover:border-rose-500 hover:bg-rose-500 hover:text-white">
+                                  
+                                  <svg width="20" class="fill-current"
+                                  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                              </a>
+                          </div>
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- About section and -->
+
+      <!-- portfolio start
+       <section id="portfolio" class="pt-35 ph-16 bg-slate-100">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h4>Portfolio</h4>
+              <h2>Project Terbaru</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque magni asperiores quod laboriosam. Omnis perferendis sed numquam tempore esse.</p>
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- akhir sosmed -->
-
-    <!-- gelombang -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,64L26.7,85.3C53.3,107,107,149,160,144C213.3,139,267,85,320,85.3C373.3,85,427,139,480,133.3C533.3,128,587,64,640,37.3C693.3,11,747,21,800,53.3C853.3,85,907,139,960,144C1013.3,149,1067,107,1120,122.7C1173.3,139,1227,213,1280,202.7C1333.3,192,1387,96,1413,48L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
-      </path>
-    </svg>
-    <!--akhir gelombang  -->
-  </section>
-  <!-- akhir jumbotron -->
-
-  <!-- about me -->
-  <section id="About">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>About Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-md-center fs-6 text-center mb-3">
-        <div class="col-md-8">
-          <p>
-            Hai, Namaku Mukhlis MJ. aku sangat suka dengan dunia desain grafis, memadukan elemen-elemen seperti warna,
-            tulisan dan komponen-komponen lainnya sehingga membentuk sebuah Visualisi yang memberikan sebuah informasi
-            kepada setiap orang yang melihat desain tersebut.
-          </p>
-          
-        </div>
-      </div>
-    </div>
-
-    <!--gelombang  -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#e2edff" fill-opacity="1"
-        d="M0,128L26.7,138.7C53.3,149,107,171,160,149.3C213.3,128,267,64,320,58.7C373.3,53,427,107,480,149.3C533.3,192,587,224,640,202.7C693.3,181,747,107,800,85.3C853.3,64,907,96,960,106.7C1013.3,117,1067,107,1120,85.3C1173.3,64,1227,32,1280,26.7C1333.3,21,1387,43,1413,53.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
-      </path>
-    </svg>
-    <!-- akhir gelombang -->
-  </section>
-  <!-- akhir about me -->
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col mb-3">
-          <h2>My Projects</h2>
-        </div>
-      </div>
 
 
-      <!-- baris setelah projects -->
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="img/3.jpg" class="card-img-top" alt="Web Dev" />
-            <div class="card-body">
-              <h5 class="card-title">Graphic Designer</h5>
-              <p class="card-text">Desain Grafis sangat menyenangkan bagiku, lebih lanjut klik tombol dibawah untuk
-                melihat apa aja yang udah aku buat</p>
-              <a href="https://www.behance.net/mukhlismjalil" class="btn btn-primary" target="_blank">Behance</a>
-            </div>
-          </div>
-        </div>
+       </section> -->
+      <!-- portfolio end -->
 
-        <!-- blogger -->
-
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="img/2.jpg" class="card-img-top" alt="blogger" />
-            <div class="card-body">
-              <h5 class="card-title">Blogger</h5>
-              <p class="card-text">
-                Aku orangnya pelupa, makanya apa yang aku tau biasanya aku catat disini. 
-              </p>
-              <a href="https://www.mukhlismj.com/" class="btn btn-warning" target="_blank">My Blog</a>
-            </div>
-          </div>
-        </div>
-        <!-- akhir blogger -->
-
-        <!-- web dev -->
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="img/1.jpg" class="card-img-top" alt="graphic Designer" />
-            <div class="card-body">
-              <h5 class="card-title">Web Dev</h5>
-              <p class="card-text">Web yang sekarang lagi teman-teman buka adalah website pertama yang aku buat sendiri
-                dan berhasil aku publish. </p>
-              <a href="https://github.com/mukhlismj" class="btn btn-dark" target="_blank">Github</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- akhir web dev -->
-      </div>
-    </div>
-
-    <!--gelombang  -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,160L15,138.7C30,117,60,75,90,101.3C120,128,150,224,180,234.7C210,245,240,171,270,144C300,117,330,139,360,165.3C390,192,420,224,450,240C480,256,510,256,540,256C570,256,600,256,630,245.3C660,235,690,213,720,218.7C750,224,780,256,810,256C840,256,870,224,900,197.3C930,171,960,149,990,138.7C1020,128,1050,128,1080,149.3C1110,171,1140,213,1170,229.3C1200,245,1230,235,1260,240C1290,245,1320,267,1350,277.3C1380,288,1410,288,1425,288L1440,288L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z">
-      </path>
-    </svg>
-
-    <!-- akhir gelombang -->
-  </section>
-  <!-- akhir Projects -->
-
-  <!-- contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>Contact Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col-md-6">
-          <!--  alert -->
-          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terimakasih!</strong> Pesan Mu udah Aku Terima :)
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <!--  akhir alert-->
-
-          <form name="wpu-contact-form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-            </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">Pesan</label>
-              <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-
-            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- gelombang -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#0d6efd" fill-opacity="1"
-        d="M0,256L15,250.7C30,245,60,235,90,197.3C120,160,150,96,180,101.3C210,107,240,181,270,213.3C300,245,330,235,360,224C390,213,420,203,450,208C480,213,510,235,540,234.7C570,235,600,213,630,186.7C660,160,690,128,720,122.7C750,117,780,139,810,170.7C840,203,870,245,900,261.3C930,277,960,267,990,229.3C1020,192,1050,128,1080,128C1110,128,1140,192,1170,192C1200,192,1230,128,1260,112C1290,96,1320,128,1350,133.3C1380,139,1410,117,1425,106.7L1440,96L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z">
-      </path>
-    </svg>
-    <!-- akhir gelombang -->
-  </section>
-
-  <!-- akhir Contatc -->
-
-  <!-- footer -->
-  <footer class="bg-primary text-white text-center pb-5 pt-2">
-    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/mukhlismjalil/"
-        class="text-white fw-bold text-decoration-none" target="_blank">Mukhlis MJ</a></p>
-  </footer>
-  <!-- akhir footer -->
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-
-  <!--  script contact -->
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyCp7jL9FObvRwuf5hDeMVnWpImazRKOnID40plyYRzTFgG_EUXNAEFmTo6khDnsyk/exec';
-    const form = document.forms['wpu-contact-form'];
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnLoading = document.querySelector('.btn-loading');
-    const myAlert = document.querySelector('.my-alert');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      // ketika tombol submit diklik
-      // tampilkan tombol loading, hilangkan tombol kirim
-      btnLoading.classList.toggle('d-none');
-      btnKirim.classList.toggle('d-none');
-
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then((response) => {
-          // tampilkan tombol kirim, hilangkan tombol loading
-          btnLoading.classList.toggle('d-none');
-          btnKirim.classList.toggle('d-none');
-          // tampilkan alert
-          myAlert.classList.toggle('d-none');
-          // riset formnya
-          form.reset();
-          console.log('Success!', response);
-        })
-        .catch((error) => console.error('Error!', error.message));
-    });
-  </script>
-  <!--  akhir script contatc-->
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
+
